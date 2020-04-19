@@ -21,11 +21,11 @@
 title: Pau Riosa 
 email: jethro.riosa@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. You put it in a teapot, it becomes the teapot. Now, water can flow or it can crash. Be water, my friend. - Bruce Lee
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://pau-riosa.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
