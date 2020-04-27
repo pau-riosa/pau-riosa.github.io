@@ -22,7 +22,8 @@ what I did on this was, I use the `v5` of [react-navigation](https://reactnaviga
 
 ### So what's the next plan?
 
-hmm, maybe I'll try work on adding a floating button that when you clicked the button it will show you some option buttons!
+hmm, maybe I'll try work on adding a floating button that when you clicked the button it will show you some option buttons 
+or maybe add a modal to show a new form! I don't know, there is a lot of ideas coming out and I just need to do it as much as possible.
 
 ### Take Note! 
 
