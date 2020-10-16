@@ -8,8 +8,9 @@ description: ""
 
 
 ### Remove containers all at once
-> if you have lots of stopped containers and would you like to remove, in your terminal simple put 
-````
-$ docker rm ${docker ps -a -a}
 
-````
+if you have lots of stopped containers and would you like to remove, in your terminal simple put 
+```
+$ docker rm $(docker ps -a -q) 
+```
+
