@@ -1,5 +1,21 @@
+.wrapper {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper>.container {
+    padding-bottom: 7.5rem;
+    padding-top: 7.5rem;
+}
+
+.wrapper .container {
+    max-width: 80rem;
+}
+
 .navigation {
-    background: #f4f5f6;
+    background: #ffc1b6;
     border-bottom: .1rem solid #d1d1d1;
     display: block;
     height: 5.2rem;
@@ -15,23 +31,21 @@
     padding-bottom: 0;
     padding-top: 0;
 }
-.wrapper .container {
-    max-width: 80rem;
+
+.navigation .navigation-link, .navigation .navigation-title, .navigation .title {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    font-size: 1.8rem;
+    line-height: 5.2rem;
+    padding: 0;
 }
 
-.navigation .navigation-title, .navigation .title {
-    color: #606c76;
+.navigation .navigation-title, .navigation .title,  {
     font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
     position: relative;
 }
 
-.navigation .navigation-link, .navigation .navigation-title, .navigation .title {
-    display: inline;
-    font-size: 1.6rem;
-    line-height: 5.2rem;
-    padding: 0;
-    text-decoration: none;
-}
 
 .navigation
 .navigation-item {
@@ -46,3 +60,7 @@
     list-style: none;
 }
 
+
+.footer {
+    padding: 8rem 0 2rem;
+}
