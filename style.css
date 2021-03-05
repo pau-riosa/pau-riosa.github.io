@@ -41,11 +41,10 @@
     padding: 0;
 }
 
-.navigation .navigation-title, .navigation .title,  {
+.navigation .navigation-title, .navigation .title  {
     font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
     position: relative;
 }
-
 
 .navigation
 .navigation-item {
