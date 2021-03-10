@@ -1,32 +1,12 @@
 ---
-title: "Pau Riosa"
+layout: default
+title: Home 
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main class="wrapper">
-      <nav class="navigation">
-        <section class="container">
-          <a class="navigation-title" href="https://github.com/pau-riosa">
-            <h1 class="title">{{ page.title }}</h1>
-          </a>
-          <ul class="navigation-list float-right">
-            <li class="navigation-item"><a href="about.html">About</a></li>
-            <li class="navigation-item"><a href="blog.html">Blogs</a></li>
-          </ul>
-        </section>
-      </nav>
-      <section class="container">
-        <p></p>
-      </section>
-    </main>
-  </body>
-</html>
+<ul> 
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title}}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

@@ -15,7 +15,7 @@
 }
 
 .navigation {
-    background: #ffc1b6;
+    background: #F5F5F5;
     border-bottom: .1rem solid #d1d1d1;
     display: block;
     height: 5.2rem;
@@ -34,7 +34,7 @@
 
 .navigation .navigation-link, .navigation .navigation-title, .navigation .title {
     text-decoration: none;
-    color: white;
+    color: #5aa3d1;
     display: inline;
     font-size: 1.8rem;
     line-height: 5.2rem;
@@ -42,7 +42,7 @@
 }
 
 .navigation .navigation-title, .navigation .title  {
-    font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
+    font-family: "Quicksand",Heltvetica,sans-serif;
     position: relative;
 }
 
@@ -59,7 +59,10 @@
     list-style: none;
 }
 
-
 .footer {
     padding: 8rem 0 2rem;
+}
+
+ul {
+    list-style: none;
 }
