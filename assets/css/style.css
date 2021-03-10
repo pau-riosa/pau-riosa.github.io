@@ -1,3 +1,12 @@
+* { 
+    font-family: "Quicksand", Heltvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: bold;
+    color: #9b4dca;
+}
+
 .wrapper {
     display: block;
     overflow: hidden;
@@ -42,7 +51,7 @@
 }
 
 .navigation .navigation-title, .navigation .title  {
-    font-family: "Quicksand",Heltvetica,sans-serif;
+    font-family: "Quicksand", Heltvetica, sans-serif;
     position: relative;
 }
 
@@ -63,6 +72,31 @@
     padding: 8rem 0 2rem;
 }
 
-ul {
+.post-list {
     list-style: none;
+    margin-top: 25px;
 }
+
+.post-link {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.post-excerpt, .post-title {
+    text-align: justify;
+}
+
+.post-date {
+    font-size: 16px;
+    float: right;
+}
+.post-date-author {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    text-align: justify !important;
+}
+
