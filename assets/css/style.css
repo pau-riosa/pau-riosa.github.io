@@ -1,11 +1,19 @@
 * { 
     font-family: "Quicksand", Heltvetica, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-weight: bold;
     color: #9b4dca;
 }
+
+blockquote {
+    font-style: italic;
+    color: #606c76;
+    background-color: #F5F5F5;
+}
+
 
 .wrapper {
     display: block;
@@ -99,3 +107,4 @@ h1, h2, h3, h4, h5, h6 {
 .post-content {
     text-align: justify !important;
 }
+
