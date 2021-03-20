@@ -13,6 +13,7 @@ title: About
 - jethro.riosa@gmail.com
 - [github](https://github.com/pau-riosa)
 - [linkedin](https://www.linkedin.com/in/jethro-paulo-riosa/)
+- [exercism](https://exercism.io/profiles/pauriosa)
 
 ##### I do like
 
