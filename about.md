@@ -14,6 +14,7 @@ title: About
 - [github](https://github.com/pau-riosa)
 - [linkedin](https://www.linkedin.com/in/jethro-paulo-riosa/)
 - [exercism](https://exercism.io/profiles/pauriosa)
+- [dev.to](https://dev.to/pauriosa)
 
 ##### I do like
 

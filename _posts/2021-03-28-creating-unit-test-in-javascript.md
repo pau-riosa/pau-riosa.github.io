@@ -18,8 +18,7 @@ $ npm install --save-dev jest
 
 ### Setup
 
-In this example, let us say we are going to solve a problem regarding `Sum of Multiples`.
-This is problem that can be found on [Project Euler](http://projecteuler.net/problem=1)
+In this example, we are going to create a sample function that prints "Hello world" and test it using jest in javascipt.
 
 For us to begin, we need to create a folder in our directory, and create a three different files namely
 `hello_world.js`, `hello_world.test.js` and `jest.config.js`
