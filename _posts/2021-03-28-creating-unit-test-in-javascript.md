@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Pau Riosa
-title: "Javascript: Unit Testing"
+title: "JS101: Unit Testing using Jest"
 ---
 
 ### Install Jest
