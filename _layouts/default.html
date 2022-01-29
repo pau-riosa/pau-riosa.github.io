@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Pau Riosa's Personal Site">
-    <meta name="keywords" content="Software Development, Personal Thoughts, Adventures, Elixir, Phoenix, ReactJS, React Native, Open to Opportunities">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Pau Riosa's Blog Post | {{ page.title }}"
+    />
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}" />
+    {% else %}
+    <meta
+      name="keywords"
+      content="Software Development, Personal Thoughts, Adventures, Elixir, Phoenix, ReactJS, React Native, Open to Opportunities"
+    />
+    {% endif %}
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <main class="wrapper">
-      {% include navigation.html %} 
-      <section class="container">
-        {{ content }} 
-      </section>
+      {% include navigation.html %}
+      <section class="container">{{ content }}</section>
     </main>
   </body>
 </html>
