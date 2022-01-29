@@ -1,5 +1,7 @@
 * {
   font-family: "Quicksand", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -125,12 +127,21 @@ section {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  width: 50%;
+}
+
+.column .tech-stack-box {
+  width: 180px;
+  height: 180px;
+  background: #e6e6e6;
+  padding: 30px 0 30px 0;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px 1px rgb(80, 79, 111);
 }
 
 @media (max-width: 1000px) {
@@ -138,5 +149,13 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .tech-stack-box {
+    margin: 12px;
   }
 }
