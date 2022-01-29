@@ -4,7 +4,7 @@ author: Pau Riosa
 title: "Today I Learned: DateTimeParsing in Elixir using Timex"
 ---
 
-### Parse "2021-04-01T14:04:30.444023Z" using Elixir
+#### Parse "2021-04-01T14:04:30.444023Z" using Elixir
 
 ```elixir
 

@@ -125,6 +125,7 @@ section {
   margin: 100px 0 100px 0;
   min-height: 30vh;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -134,6 +135,18 @@ section {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .column .tech-stack-box {
