@@ -3,8 +3,19 @@ layout: default
 author: jill
 ---
 
-<h1>{{page.title}}</h1>
-<div class="post-date-author">
-  {{ page.date | date: "%-d %B %Y" }} - {{ page.author }}
-</div>
-<div class="post-content">{{ content }}</div>
+<section class="post-content-section">
+  {% include navigation.html %}
+
+  <div class="row">
+    <div class="column">
+      <h1>{{page.title}}</h1>
+      <div class="post-date-author">
+        {{ page.date | date: "%-d %B %Y" }} - {{ page.author }}
+      </div>
+      <div class="post-content">{{ content }}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column"></div>
+  </div>
+</section>

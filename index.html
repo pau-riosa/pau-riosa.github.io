@@ -3,76 +3,62 @@ layout: default
 title: Home
 ---
 
-<!-- header -->
-<section>
-  <div class="row">
-    <div class="column">
+<!-- hero -->
+<section class="hero-section">
+  {% include navigation.html %}
+  <div class="content">
+    <div class="text-box">
       <h1>Hey there, I'm Pau.</h1>
       <h1>Nice to meet ya!</h1>
       <p>
         I am a Backend Engineer at Day and a Web Developer Instructor at Night
       </p>
     </div>
-    <div class="column">
-      <div class="header-image">
-        <img src="./assets/images/undraw_feeling_proud_qne1.svg" />
-      </div>
+    <div class="img-box">
+      <img src="./assets/images/undraw_feeling_proud_qne1.svg" />
     </div>
   </div>
 </section>
-<!--  end of header -->
+
+<!--  end of hero -->
 
 <!-- tech stack-->
-<section>
+<section class="tech-stack-section">
   <div class="row">
-    <div class="column">
-      <h1>My Techstack</h1>
-    </div>
+    <h1>My Techstack</h1>
   </div>
-  </br>
+
   <div class="row">
     <div class="column">
-      <div class="tech-stack-box">
-        <img src="./assets/images/elixir-svgrepo-com.svg" />
-      </div>
+      <img src="./assets/images/elixir-svgrepo-com.svg" />
     </div>
     <div class="column">
-      <div class="tech-stack-box">
-        <img src="./assets/images/phoenix-framework-svgrepo-com.svg" />
-      </div>
+      <img src="./assets/images/phoenix-framework-svgrepo-com.svg" />
     </div>
     <div class="column">
-      <div class="tech-stack-box">
-        <img src="./assets/images/reactjs-fill-svgrepo-com.svg" />
-      </div>
+      <img src="./assets/images/reactjs-fill-svgrepo-com.svg" />
     </div>
     <div class="column">
-      <div class="tech-stack-box">
-        <img src="./assets/images/git-svgrepo-com.svg" />
-      </div>
+      <img src="./assets/images/git-svgrepo-com.svg" />
     </div>
     <div class="column">
-      <div class="tech-stack-box">
-        <img src="./assets/images/postgresql-svgrepo-com.svg" />
-      </div>
+      <img src="./assets/images/postgresql-svgrepo-com.svg" />
     </div>
     <div class="column">
-      <div class="tech-stack-box">
-        <img
-          src="./assets/images/mobile-development-coding-code-xcode-svgrepo-com.svg"
-        />
-      </div>
+      <img
+        src="./assets/images/mobile-development-coding-code-xcode-svgrepo-com.svg"
+      />
     </div>
   </div>
 </section>
 <!-- end tech stack-->
 <!-- writings -->
-<section class="posts">
+<section class="post-section">
   <h1>Recent Writings</h1>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 10 %}
     <li>
-      <div>
+      <div class="post-item">
         <a class="post-link" href="{{ post.url }}">
           {{ post.title }}
           <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
