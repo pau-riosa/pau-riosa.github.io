@@ -185,6 +185,10 @@ section.post-section {
   margin: auto;
 }
 
+section.post-section .post-list {
+  width: 100%;
+}
+
 section.post-section .row {
   display: flex;
   flex-direction: row;
@@ -194,7 +198,6 @@ section.post-section .row {
 section.post-section .column {
   display: flex;
   flex-direction: column;
-  width: 150px;
 }
 
 section.post-section ul {
@@ -231,6 +234,7 @@ section.post-content-section .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 100px 0;
 }
 
