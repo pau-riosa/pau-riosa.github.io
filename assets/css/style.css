@@ -249,4 +249,8 @@ section.post-content-section .post-content {
   margin: 100px 0;
 }
 
+img {
+  width: 100%;
+}
+
 /* end of post-section */
