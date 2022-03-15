@@ -1,13 +1,23 @@
-<header class="navigation">
-  <a href="https://github.com/pau-riosa">
-    <h1 class="title">Pau Riosa</h1>
-  </a>
-  <ul class="navigation">
-    <li><a href="/">Home</a></li>
-    <li><a href="/blogs.html">Blogs</a></li>
-    <!-- <li> -->
-    <!--   <a href="/case-studies.html">Case Studies</a> -->
-    <!-- </li> -->
-    <!-- <li><a href="/about.html">About</a></li> -->
-  </ul>
+<header class="header">
+  <nav class="navbar">
+    <a href="{{ root_url }}/index.html">
+      <img
+        src="{{ root_url }}/assets/images/logo.svg"
+        width="202px"
+        height="66px"
+      />
+    </a>
+    <div></div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="{{root_url}}/blogs.html">BLOGS</a></li>
+      <li class="nav-item">
+        <a href="{{root_url}}/projects.html">PROJECTS</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
 </header>

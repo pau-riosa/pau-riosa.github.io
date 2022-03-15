@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@font-face {
+  font-family: "classist";
+  src: url("../fonts/classist.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "classist", "Anton", "sans-serif";
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+section {
+  width: 1300px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Anton";
+  color: #ffe5b4;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+header ul li a:hover {
+  color: #ffc102;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.container-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10rem 0;
+  gap: 4rem;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.pau {
+  font-size: calc(4 * (1.5vh + 1.1vw));
+  color: #ffc102;
+}
+
+p {
+  font-family: "Anton";
+  font-size: calc(0.5 * (1.5vh + 1.1vw));
+  letter-spacing: 13px;
+  color: #ffe5b4;
+}
+
+.sub-text {
+  font-family: "Anton";
+  color: #ffc102;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 100px;
+}
+
+.sticky-footer {
+  position: sticky;
+  top: 100%;
+}
+
+.sticky-footer img {
+  padding: 0 10px;
+}
+
+a.contact-me-btn {
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Anton";
+  width: 30%;
+  margin: 25px 0;
+  border: 1px solid #ffc102;
+  background-color: white;
+  border-radius: 5px;
+  font-size: calc(0.3 * (1.5vh + 1.1vw));
+  color: #ffc102;
+}
+
+a.contact-me-btn:hover {
+  background-color: #ffc102;
+  color: white;
+  transition: 0.6s;
+}
+
+/*
+projects 
+ */
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-item .item-1 {
+  padding: 50px;
+}
+
+.project-item .item-1 p {
+  font-family: "Anton";
+  font-size: calc(0.3 * (1.5vh + 1.1vw));
+  letter-spacing: 5px;
+  color: #000000;
+  opacity: 50%;
+  text-align: justify;
+}
+
+.project-item .item-1 h1 {
+  font-size: calc(1 * (1.5vh + 1.1vw));
+  color: #ffc102;
+  font-family: "Anton";
+  margin-bottom: 50px;
+}
+
+/*
+blog 
+ */
+
+.blog-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.blog-item .item-1 {
+  padding: 20px 5px;
+  width: 400px;
+}
+
+.blog-item h1 {
+  font-family: "Anton", sans-serif;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #ffc102;
+  font-size: calc(0.5 * (1.5vh + 1.1vw));
+}
+
+.blog-item .card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  border-radius: 1em;
+  margin: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  object-fit: cover;
+}
+
+.card .card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .card__body p {
+  letter-spacing: 0;
+  color: black;
+  opacity: 40%;
+  font-size: calc(0.3 * (1.5vh + 1.1vw));
+}
+
+.card .card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > h5 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #666;
+}
+
+.user__info > small {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #666;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-family: "Anton", sans-serif;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #2f80ed;
+  color: #fafafa;
+}
+
+/*
+about 
+ */
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .item-1 {
+  padding: 50px;
+}
+
+.about .item-1 p {
+  font-family: "Anton";
+  font-size: calc(0.3 * (1.5vh + 1.1vw));
+  letter-spacing: 5px;
+  color: #000000;
+  opacity: 50%;
+  text-align: justify;
+}
+
+.about .item-1 h1 {
+  font-size: calc(1 * (1.5vh + 1.1vw));
+  color: #ffc102;
+  font-family: "Anton";
+  margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .container-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .item-2 {
+    padding: 20px;
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

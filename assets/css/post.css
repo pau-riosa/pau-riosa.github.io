@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@font-face {
+  font-family: "classist";
+  src: url("../fonts/classist.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "classist", "Anton", "sans-serif";
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+section {
+  width: 1300px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Anton";
+  color: #ffe5b4;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-style: normal;
+}
+
+header ul li a:hover {
+  color: #ffc102;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.container-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10rem 0;
+  gap: 4rem;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.pau {
+  font-size: calc(4 * (1.5vh + 1.1vw));
+  color: #ffc102;
+}
+
+p {
+  font-family: "Anton";
+  font-size: calc(0.5 * (1.5vh + 1.1vw));
+  letter-spacing: 13px;
+  color: #ffe5b4;
+}
+
+.sub-text {
+  font-family: "Anton";
+  color: #ffc102;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 100px;
+}
+
+.sticky-footer {
+  position: sticky;
+  top: 100%;
+}
+
+.sticky-footer img {
+  padding: 0 10px;
+}
+
+.post-layout .post {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.post-layout .post > h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffc102;
+  font-size: calc(1 * (1.5vh + 1.1vw));
+  font-family: "Anton";
+  padding: 20px 0;
+}
+
+.post-layout .post > p {
+  color: #666;
+  letter-spacing: 0px;
+  padding: 15px 0;
+  font-size: calc(0.4 * (1.5vh + 1.1vw));
+  font-family: serif;
+}
+
+.post-layout .post blockquote p {
+  letter-spacing: 0px;
+  color: #ffc102;
+  opacity: 50%;
+  background-color: red;
+  padding: 15px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.post-layout .post p strong,
+a {
+  letter-spacing: 0px;
+  color: #ffc102;
+  padding: 15px;
+  font-family: serif;
+  font-style: italic;
+}
+
+.post-layout .post > p > a,
+code {
+  letter-spacing: 0px;
+  color: #ffc102;
+  padding: 15px;
+  font-family: serif;
+  font-style: italic;
+}
+
+.post-layout .post .language-plaintext {
+  background-color: red;
+  opacity: 50%;
+  padding: 20px;
+  margin: 30px 0px;
+}
+
+@media (max-width: 900px) {
+  .container-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .item-2 {
+    padding: 20px;
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

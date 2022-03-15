@@ -3,69 +3,23 @@ layout: default
 title: Home
 ---
 
-<!-- hero -->
 <section class="hero-section">
   {% include navigation.html %}
-  <div class="content">
-    <div class="text-box">
-      <h1>Hey there, I'm Pau.</h1>
-      <h1>Nice to meet ya!</h1>
-      <p>
-        I am a Backend Engineer at Day and a Web Developer Instructor at Night
+  <div class="container-layout">
+    <div class="item-1">
+      <img src="./assets/images//profile-picture.png" />
+    </div>
+    <div class="item-2">
+      <p class="text">hi my name is <span class="pau">PAU</span></p>
+      <p class="text">
+      A <span class="sub-text">software engineer</span> by day
       </p>
-    </div>
-    <div class="img-box">
-      <img src="./assets/images/undraw_feeling_proud_qne1.svg" />
-    </div>
-  </div>
-</section>
-
-<!--  end of hero -->
-
-<!-- tech stack-->
-<section class="tech-stack-section">
-  <div class="row">
-    <h1>My Techstack</h1>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img src="./assets/images/elixir-svgrepo-com.svg" />
-    </div>
-    <div class="column">
-      <img src="./assets/images/phoenix-framework-svgrepo-com.svg" />
-    </div>
-    <div class="column">
-      <img src="./assets/images/reactjs-fill-svgrepo-com.svg" />
-    </div>
-    <div class="column">
-      <img src="./assets/images/git-svgrepo-com.svg" />
-    </div>
-    <div class="column">
-      <img src="./assets/images/postgresql-svgrepo-com.svg" />
-    </div>
-    <div class="column">
-      <img
-        src="./assets/images/mobile-development-coding-code-xcode-svgrepo-com.svg"
-      />
+      <p class="text">A <span class="sub-text">teacher</span> by night</p>
+      <a class="contact-me-btn" href="#">Contact Me</a>
     </div>
   </div>
+  {% include footer.html %}
 </section>
-<!-- end tech stack-->
-<!-- writings -->
-<section class="post-section">
-  <h1>Recent Writings</h1>
-  <ul class="post-list">
-    {% for post in site.posts limit: 10 %}
-    <li>
-      <div class="post-item">
-        <a class="post-link" href="{{ post.url }}">
-          {{ post.title }}
-          <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
-        </a>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-<!-- writings -->
+
+
+

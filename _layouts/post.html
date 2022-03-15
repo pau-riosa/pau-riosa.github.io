@@ -1,18 +1,47 @@
----
-layout: default
-author: jill
----
 
-<section class="post-content-section">
-  {% include navigation.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="row">
-    <div class="column">
-      <h1>{{page.title}}</h1>
-      <div class="post-date-author">
-        {{ page.date | date: "%-d %B %Y" }} - {{ page.author }}
+    <meta
+        name="description"
+        content="Pau Riosa's Blog Post | {{ page.title }}"
+        />
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}" />
+    {% else %}
+    <meta
+        name="keywords"
+        content="Software Development, Personal Thoughts, Adventures, Elixir, Phoenix, ReactJS, React Native, Open to Opportunities"
+        />
+    {% endif %}
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/post.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9702000161151688"
+                  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section>
+      {% include navigation.html %}
+      <!-- <div class="row"> -->
+      <!--   <div class="column"> -->
+      <!--     <h1>{{page.title}}</h1> -->
+      <!--     <div class="post-date-author"> -->
+      <!--       {{ page.date | date: "%-d %B %Y" }} - {{ page.author }} -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+      <div class="post-layout">
+        <div class="post">
+          {{ content }}
+        </div>
       </div>
-    </div>
-  </div>
-  {{ content }}
-</section>
+
+      {% include footer.html %} 
+    </section>
+  </body>
+</html>
+
