@@ -2,6 +2,7 @@
 layout: post
 author: Pau Riosa
 title: Install Erlang OTP 22.x in macOS using asdf package manager
+image_path: /assets/images/IMG_20220221_153902.jpg
 ---
 
 ### Specs

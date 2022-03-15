@@ -2,6 +2,7 @@
 layout: post
 author: Pau Riosa
 title: "Today I Learned: DateTimeParsing in Elixir using Timex"
+image_path: /assets/images/IMG_20220221_153902.jpg
 ---
 
 #### Parse "2021-04-01T14:04:30.444023Z" using Elixir

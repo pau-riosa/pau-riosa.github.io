@@ -13,9 +13,10 @@ title: Blogs
         <div class="card__header">
             <div class="module lr">
               <img
-                  src="./assets/images/image-from-rawpixel-id-560462-jpeg.jpg"
+                  src="{{ root_url }}{{ post.image_path }}"
                   width="100%"
                   />
+                  {{ post.image }}
             </div>
         </div>
         <div class="card__body">
@@ -29,7 +30,7 @@ title: Blogs
         <div class="card__footer">
           <div class="user">
             <img
-                src="./assets/images/profile-picture.png"
+                src="{{ root_url }}/assets/images/profile-picture.png"
                 alt="user__image"
                 class="user__image"
                 width="45"

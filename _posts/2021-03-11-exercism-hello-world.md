@@ -2,6 +2,7 @@
 layout: post
 author: Pau Riosa
 title: "Exercism: Hello World"
+image_path: /assets/images/IMG_20220221_153902.jpg
 ---
 
 This is the first time that I tried [exercism.io](https://exercism.io) . For me it is a website that trains you on how far can you learn a specific 

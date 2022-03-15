@@ -9,7 +9,7 @@ title: Projects
         <div class="project-item">
           <div class="item-1">
             <img
-              src="./assets/images/image-from-rawpixel-id-560462-jpeg.jpg"
+              src="{{ root_url }}/assets/images/IMG_20220221_153902.jpg"
               width="100%"
             />
           </div>
@@ -28,7 +28,7 @@ title: Projects
         <div class="project-item">
           <div class="item-1">
             <img
-              src="./assets/images/image-from-rawpixel-id-593160-jpeg.jpg"
+              src="{{ root_url }}/assets/images/IMG_20220221_153902.jpg"
               width="100%"
             />
           </div>
@@ -47,7 +47,7 @@ title: Projects
         <div class="project-item">
           <div class="item-1">
             <img
-              src="./assets/images/image-from-rawpixel-id-432362-jpeg.jpg"
+              src="{{ root_url }}/assets/images/IMG_20220221_153902.jpg"
               width="100%"
             />
           </div>
