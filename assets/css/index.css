@@ -297,6 +297,12 @@ about
   font-family: "Anton";
   margin-bottom: 50px;
 }
+p.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 @media (max-width: 900px) {
   .container-layout {

@@ -21,10 +21,8 @@ title: Blogs
         </div>
         <div class="card__body">
           <h1>{{post.title}}</h1>
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-          perferendis molestiae non nemo doloribus. Doloremque, nihil! At
-          ea atque quidem!
+          <p class="truncate">
+          {{ post.keywords }} 
           </p>
         </div>
         <div class="card__footer">
