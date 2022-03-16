@@ -8,12 +8,12 @@ title: Blogs
   <div class="container-layout">
     <div class="blog-item"> 
     {% for post in site.posts %}
-          <a href="{{post.url}}">
+          <a href="{{post.link}}">
       <div class="card">
         <div class="card__header">
             <div class="module lr">
               <img
-                  src="{{ root_url }}{{ post.image_path }}"
+                  src="{{ post.image_path }}"
                   width="100%"
                   />
                   {{ post.image }}
