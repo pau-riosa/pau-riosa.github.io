@@ -18,7 +18,7 @@ body {
 }
 
 section {
-  width: 1300px;
+  width: 1500px;
   margin: auto;
 }
 
@@ -64,10 +64,14 @@ header ul li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
-  padding: 10rem 0;
   gap: 4rem;
+}
+
+.container-layout.header,
+.blogs {
+  padding: 10rem 0;
 }
 
 .item-1 {
@@ -86,13 +90,13 @@ header ul li a:hover {
 }
 
 .pau {
-  font-size: calc(4 * (1.5vh + 1.1vw));
+  font-size: 10em;
   color: #ffc102;
 }
 
 p {
   font-family: "Anton";
-  font-size: calc(0.5 * (1.5vh + 1.1vw));
+  font-size: 1em;
   letter-spacing: 13px;
   color: #ffe5b4;
 }
@@ -102,12 +106,141 @@ p {
   color: #ffc102;
 }
 
+.grid-techstack {
+  display: grid;
+  grid-template-areas:
+    "header . ."
+    "body body body"
+    "body body body";
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  gap: 100px;
+  padding: 0px 150px;
+}
+
+.grid-techstack > .header {
+  grid-area: header;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+}
+.grid-techstack > .body {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: start;
+  align-items: center;
+  gap: 50px;
+}
+
+.grid-techstack > .header h1 {
+  font-family: "Anton", sans-serif;
+  color: #ffc102;
+  letter-spacing: 10px;
+}
+
+.grid-techstack > .body h2 {
+  font-family: "Anton", sans-serif;
+  color: #ffc102;
+  letter-spacing: 5px;
+}
+
+.grid-item-1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+  padding: 100px;
+}
+
+.grid-sub-item-1 {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.grid-sub-item-1 .card img {
+  max-width: 100%;
+  display: block;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  object-fit: cover;
+}
+
+.grid-sub-item-1 .card .card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-sub-item-1,
+.grid-item-1 .card .card__body h1 {
+  letter-spacing: 0;
+  color: black;
+  font-size: 2em;
+  font-family: "Anton", sans-serif;
+  color: #ffc102;
+}
+
+.grid-sub-item-1 .card .card__body p {
+  letter-spacing: 0;
+  color: black;
+  opacity: 40%;
+  font-size: 1em;
+}
+
+.grid-sub-item-1 .card .card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.grid-sub-item-1 > .user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.grid-sub-item-1 > .user__image {
+  border-radius: 50%;
+}
+
+.grid-sub-item-1 > .user__info > h5 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #666;
+}
+
+.grid-sub-item-1 > .user__info > small {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  color: #666;
+}
+
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 100px;
+}
+
+footer .images {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding: 100px;
+}
+
+footer .footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+}
+
+footer .footer-text span {
+  font-family: sans-serif;
+  font-size: 0.75em;
+  opacity: 50%;
 }
 
 .sticky-footer {
@@ -130,7 +263,7 @@ a.contact-me-btn {
   border: 1px solid #ffc102;
   background-color: white;
   border-radius: 5px;
-  font-size: calc(0.3 * (1.5vh + 1.1vw));
+  font-size: 1em;
   color: #ffc102;
 }
 
@@ -190,7 +323,7 @@ blog
   margin: 0;
   letter-spacing: 5px;
   color: #ffc102;
-  font-size: calc(0.5 * (1.5vh + 1.1vw));
+  font-size: 1.2em;
 }
 
 .blog-item .card {
@@ -221,7 +354,7 @@ blog
   letter-spacing: 0;
   color: black;
   opacity: 40%;
-  font-size: calc(0.3 * (1.5vh + 1.1vw));
+  font-size: 1em;
 }
 
 .card .card__footer {
@@ -269,34 +402,6 @@ blog
   color: #fafafa;
 }
 
-/*
-about 
- */
-
-.about {
-  display: flex;
-  flex-direction: row;
-}
-
-.about .item-1 {
-  padding: 50px;
-}
-
-.about .item-1 p {
-  font-family: "Anton";
-  font-size: calc(0.3 * (1.5vh + 1.1vw));
-  letter-spacing: 5px;
-  color: #000000;
-  opacity: 50%;
-  text-align: justify;
-}
-
-.about .item-1 h1 {
-  font-size: calc(1 * (1.5vh + 1.1vw));
-  color: #ffc102;
-  font-family: "Anton";
-  margin-bottom: 50px;
-}
 p.truncate {
   width: 250px;
   white-space: nowrap;
@@ -311,6 +416,12 @@ p.truncate {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+  }
+
+  .grid-item-1,
+  .grid-sub-item-1 {
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .item-2 {

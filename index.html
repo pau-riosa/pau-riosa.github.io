@@ -3,23 +3,110 @@ layout: default
 title: Home
 ---
 
-<section class="hero-section">
+<section>
   {% include navigation.html %}
-  <div class="container-layout">
+  <div class="container-layout header">
     <div class="item-1">
       <img src="./assets/images//profile-picture.png" />
     </div>
     <div class="item-2">
       <p class="text">hi my name is <span class="pau">PAU</span></p>
       <p class="text">
-      A <span class="sub-text">software engineer</span> by day
+        A <span class="sub-text">software engineer</span> by day
       </p>
       <p class="text">A <span class="sub-text">teacher</span> by night</p>
-      <a class="contact-me-btn" href="mailto:jethro.riosa@gmail.com" target="_blank">Contact Me</a>
+      <a
+        class="contact-me-btn"
+        href="mailto:jethro.riosa@gmail.com"
+        target="_blank"
+        >Contact Me</a
+      >
     </div>
   </div>
+
+  <div class="grid-techstack">
+    <div class="header">
+      <h1>TechStack</h1>
+    </div>
+    <div class="body">
+      <h2>Elixir</h2>
+      <h2>React JS</h2>
+      <h2>Jekyll</h2>
+      <h2>Phoenix Framework</h2>
+      <h2>React Native</h2>
+      <h2>HTML/CSS</h2>
+      <h2>Apollo/GraphQL</h2>
+      <h2>Javascript</h2>
+      <h2>GIT/GITHUB</h2>
+      <h2>Postgres/Ecto</h2>
+    </div>
+  </div>
+  <div class="container-layout blogs">
+    <div class="grid-item-1">
+      <a href="{{site.post.last.link}}">
+        <div class="card">
+          <div class="card__header">
+            <div class="module lr">
+              <img src="{{ site.posts.first.image_path }}" width="100%" />
+            </div>
+          </div>
+          <div class="card__body">
+            <h1>{{ site.posts.first.title}}</h1>
+            <p class="truncate">{{ site.posts.first.keywords }}</p>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img
+                src="{{ root_url }}/assets/images/profile-picture.png"
+                alt="user__image"
+                class="user__image"
+                width="45"
+                height="45"
+              />
+              <div class="user__info">
+                <h5>{{ site.posts.first.author }}</h5>
+                <small>{{ site.posts.first.date | date: "%-d %B %Y" }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <div class="grid-sub-item-1">
+        {% for post in site.posts offset: 1 limit: 2 %}
+        <a href="{{post.link}}">
+          <div class="card">
+            <div class="card__header">
+              <div class="module lr">
+                <img src="{{ post.image_path }}" width="100%" />
+                {{ post.image }}
+              </div>
+            </div>
+            <div class="card__body">
+              <h1>{{post.title}}</h1>
+              <p class="truncate">{{ post.keywords }}</p>
+            </div>
+            <div class="card__footer">
+              <div class="user">
+                <img
+                  src="{{ root_url }}/assets/images/profile-picture.png"
+                  alt="user__image"
+                  class="user__image"
+                  width="45"
+                  height="45"
+                />
+                <div class="user__info">
+                  <h5>{{ post.author }}</h5>
+                  <small>{{ post.date | date: "%-d %B %Y" }}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
   {% include footer.html %}
 </section>
-
-
-
