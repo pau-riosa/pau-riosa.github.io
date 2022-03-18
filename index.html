@@ -45,12 +45,10 @@ title: Home
 
   <div class="container-layout blogs">
     <div class="grid-item-1">
-      <a href="{{site.posts.last.link}}">
+      <a href="{{site.posts.first.link}}">
         <div class="card">
           <div class="card__header">
-            <div class="module lr">
-              <img src="{{ site.posts.first.image_path }}" width="100%" />
-            </div>
+            <img src="{{ site.posts.first.image_path }}" width="100%" />
           </div>
           <div class="card__body">
             <h1>{{ site.posts.first.title}}</h1>
